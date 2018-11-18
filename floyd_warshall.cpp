@@ -51,7 +51,6 @@ void floydwarshall(int graph[][v])
 }
 int main()
 {
-	cout<<"Floyd Warshall Algorithm output : "<<endl;
 	int graph[v][v]=
 	{
 		{INF,-1,-2,INF},
@@ -59,6 +58,19 @@ int main()
 		{5,1,INF,2},
 		{3,-1,1,INF}
 	};
+	cout<<"Let INFINITY is 99999 then ";
+	cout<<"Floyd Warshall Algorithm input : "<<endl;
+	for(int i=0;i<v;i++)
+	{
+		for(int j=0;j<v;j++)
+		{
+			cout<<graph[i][j]<<"  ";
+		}
+	cout<<endl;
+	}
+	
+	cout<<"Floyd Warshall Algorithm output : "<<endl;
+	
 	floydwarshall(graph);
 
 }
